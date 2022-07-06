@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+:root {
+    
+    --main-color: #f0eeeb;
+    --secundary-color: #292929;
+    --terciary-color: #686254;
+    --color-black: #000000;
+    --iconSize: 1.5em 
+}
+
+/*   Header   */
+
+.promotion {
+    width: 100%;
+    background-color: #000000;
+    padding: 0.7rem;
+}
+
+.promotion p {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 2rem 12rem 0 12rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.menu #logo{
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.menu ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 6rem;
+}
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-weight: 500;
+}
+
+.call-action {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+}
+
+/*   main page   */
+
+.intro {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    gap: 13rem;
+}
+
+#container-img {
+    height: 82%;
+
+}
+
+#container-img > img {
+    display: block;
+    max-height: 100%;
+}
+
+.intro > #container-txt > h1{
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+.intro > #container-txt > p {
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    color: var(--terciary-color);
+    font-size: 1rem;
+}
+
+
+#container-txt > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+  
+#container-txt > ul > li {
+    background-image: url("./assets/Checkmark.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: var(--iconSize);
+
+    color: var(--terciary-color);
+
+    font-weight: 700;
+    line-height: var(--iconSize);
+    padding-left: calc(var(--iconSize) + 0.5em );
+}
+
+/*   section 1   */
+
+.section-transition {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 9rem 2rem 9rem;
+
+}
+
+.section-transition > img {
+    width: 10%;
+    margin-right: 1rem;
+}
+
+/*   section 2   */
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-container {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-2-container-text {
+    position: absolute;  
+    margin-right: 25rem;
+}
+
+#section-2-container-text > h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#section-2-container-text > p{
+    margin-bottom: 1rem;
+}
+
+.links {
+    color: var(--terciary-color);
+    font-weight: 700;
+}
+
+/*   section 3   */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 50vh;
+}
+
+.section-3-img {
+    height: 100%;
+}
+
+#section-3-img > img {
+    height: 400px;
+    margin-top: 3rem;
+}
+
+#section-3-txt > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#section-3-txt > p {
+    margin-bottom: 1rem;
+}
+
+/*   footer   */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    gap: 6rem;
+}
+
+.h4-title {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+
+.footer-text {
+    color:#92918e;
+    text-decoration: none;
+}
+
+.footer-box > ul > li {
+    margin-bottom: 0.7rem;
+}
