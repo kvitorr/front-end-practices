@@ -26,3 +26,4 @@ function deletar(){
 function calculo(){
     visor.innerHTML = eval(visor.innerHTML)
 }
+
