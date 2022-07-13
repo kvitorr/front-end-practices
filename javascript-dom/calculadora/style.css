@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+:root {
+    --main-background: hsl(268, 75%, 9%);
+    --toggle-background: hsl(268, 71%, 12%);
+
+    --Dark-violet: hsl(281, 89%, 26%);
+    --Vivid-magenta: hsl(285, 91%, 52%);
+
+    --Pure-cyan: hsl(176, 100%, 44%);
+    --Soft-cyan: hsl(177, 92%, 70%);
+
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta: hsl(290, 70%, 36%);
+
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0, 100%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#visor {
+    width: 364px;
+    min-height: 38px;
+    background-color: var(--toggle-background);
+    margin: 1rem auto;
+
+    color: var(--Light-yellow);
+    word-wrap: break-word;
+    text-align: right;
+}
+
+#calculadora {
+    background-color: var(--main-background);
+    font-size: 32px;
+}
+
+.teclas{
+    background-color: var(--toggle-background);
+    padding: 1rem;
+}
+
+#grid-item-especial {
+    color: white;
+    font-size: 20px;
+    background-color: var(--Dark-violet);
+}
+
+#grid-item-especial:hover {
+    background-color: var(--Dark-magenta);
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-columns: 70px 70px 70px 70px;
+    gap: 1rem;
+    margin-bottom: 18px;
+
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 158px 158px;
+    gap: 1rem;
+
+}
+
+.grid-item {  
+    font-weight: 700;
+    color: var(--Light-yellow);
+    background-color: var(--Very-dark-violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border-bottom: 3.5px solid var(--Dark-magenta);
+
+    cursor: pointer;
+}
+
+.grid-item:hover {  
+    background-color:#6b34ac;
+    transition: 0.5s;
+}
+
+.grid-item2 {
+    background-color: var(--Dark-violet);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border-bottom: 3.5px solid var(--Dark-magenta);
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.grid-item2:hover {
+    background-color: var(--Dark-magenta);
+    transition: 0.5s;
+}
+
+#grid-equal-item{
+    background-color: var(--Pure-cyan);
+    color: black;
+    font-weight: 700;
+
+    border-bottom: 3.5px solid cyan;
+}
+
+#grid-equal-item:hover{
+    background-color: var(--Soft-cyan);
+    transition: 0.5s;
+
+}
+
+#grid-item-especial {
+    font-size: 20px;
+}
