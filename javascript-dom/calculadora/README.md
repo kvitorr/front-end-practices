@@ -1,6 +1,6 @@
 ### Screenshot
 
-![Calculadora](./screenshot.jpeg)
+![Calculadora](./screenshot.gif)
 
 ## My process
 
