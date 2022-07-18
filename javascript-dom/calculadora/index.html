@@ -7,57 +7,63 @@
     <link rel="stylesheet" href="./style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+    <main id="theme-calculator">
+        <div id="calculadora">
 
-
-    <div id="calculadora">
-
-        <nav>
-            <p>calculadora</p>
-        </nav>
-        
-        <div class="visor-div">
-            <p id="visor"></p>
-        </div>
+            <div class="painel">
+                <p>calc</p>
+    
+                <div class="change-theme">
+                        <div class="theme">
+                            <p>theme</p>
+                            <div class="toggle-theme">
+                                <span class="toggle" id="one" onclick="apply_theme(1)"></span>
+                                <span class="toggle" id="two" onclick="apply_theme(2)"></span>
+                                <span class="toggle" id="three" onclick="apply_theme(3)"></span>
+                            </div>
+                        </div>
+                </div>
+            </div>
             
-        <div class="teclas">
-            <div class="grid-1">
-                <div class="grid-item" onclick="insert('7')">7</div>
-                <div class="grid-item" onclick="insert('8')">8</div>
-                <div class="grid-item" onclick="insert('9')">9</div>
-                <div class="grid-item" id="grid-item-especial" onclick="deletar()">DEL</div>
-
-                <div class="grid-item" onclick="insert('4')">4</div>
-                <div class="grid-item" onclick="insert('5')">5</div>
-                <div class="grid-item" onclick="insert('6')">6</div>
-                <div class="grid-item" onclick="insert('+')">+</div>
-
-                <div class="grid-item" onclick="insert('1')">1</div>
-                <div class="grid-item" onclick="insert('2')">2</div>
-                <div class="grid-item" onclick="insert('3')">3</div>
-                <div class="grid-item" onclick="insert('-')">-</div>
-
-                <div class="grid-item" onclick="insert('.')">.</div>
-                <div class="grid-item" onclick="insert('0')">0</div>
-                <div class="grid-item" onclick="insert('/')">/</div>
-                <div class="grid-item" onclick="insert('*')">x</div>
+            
+            <div class="visor-div">
+                <p id="visor"></p>
             </div>
-
-            <div class="grid-2">
-                <div class="grid-item2" onclick="resetar()"> RESET</div>
-                <div class="grid-item2" id="grid-equal-item" onclick="calculo()">=</div>
+                
+            <div class="teclas">
+                <div class="grid">
+                    <span class="item" onclick="insert('7')">7</span>
+                    <span class="item" onclick="insert('8')">8</span>
+                    <span class="item" onclick="insert('9')">9</span>
+                    <span class="item theme-special" onclick="deletar()">DEL</span>
+    
+                    <span class="item" onclick="insert('4')">4</span>
+                    <span class="item" onclick="insert('5')">5</span>
+                    <span class="item" onclick="insert('6')">6</span>
+                    <span class="item" onclick="insert('+')">+</span>
+    
+                    <span class="item" onclick="insert('1')">1</span>
+                    <span class="item" onclick="insert('2')">2</span>
+                    <span class="item" onclick="insert('3')">3</span>
+                    <span class="item" onclick="insert('-')">-</span>
+    
+                    <span class="item" onclick="insert('.')">.</span>
+                    <span class="item" onclick="insert('0')">0</span>
+                    <span class="item" onclick="insert('/')">/</span>
+                    <span class="item" onclick="insert('*')">x</span>
+    
+                    <span class="item special width2 theme-special" onclick="resetar()">RESET</span>
+                    <span class="item special width2 equal-item" onclick="calculo()">=</span>
+                </div>
+            
             </div>
-        
         </div>
-    </div>
-
-
+    </main>
+    
 <script src="./script.js"></script>
-<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-
 </body>
 </html>
